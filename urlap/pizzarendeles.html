@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Peti Palotája</title>
+</head>
+
+<body>
+    <h1>Pizzák rendelése</h1>
+
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Adataid</legend>
+            <p>
+                <label for="nev">Teljes név:</label>
+                <input type="text" name="nev" id="nev" placeholder="pl.: Pizza Peti" required>
+            </p>
+
+            <p>
+                <label for="phone-number">Telefonszám</label>
+                <input type="tel" name="phone-number" id="phone-number" minlength="12" maxlength="15"
+                    placeholder="+36 70 561 6764" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>A TE Pizzád</legend>
+
+            <label for="fajta"><h3 style="margin-bottom: 0px;">Fajta</h3> <br></label>
+            <select id="fajta" name="fajta" required>
+                <option value="">-- válassz --</option>
+                <option value="margherita">Margaréta</option>
+                <option value="sonkas">Sonka</option>
+                <option value="sonkas">Sonka - Kukorica</option>
+                <option value="negysajtos">Sonka - Gomba</option>
+                <option value="negysajtos">Sonka - Gomba - Kukorica</option>
+                <option value="negysajtos">Négysajtos</option>
+
+            </select>
+            <p>
+            <h3 style="margin-bottom: 0px;">Extra felétek</h3><br>
+            <input type="checkbox" name="feltetek" id="sajt" value="sajt" style="margin-bottom: 20px;">
+            <label for="sports">Sajt (Ingyenes)</label>
+            <br>
+            <input type="checkbox" name="feltetek" id="szalami" value="szalami" style="margin-bottom: 20px;">
+            <label for="sports">Szalámi (+350 Ft)</label>
+            <br>
+            <input type="checkbox" name="feltetek" id="gomba" value="gomba" style="margin-bottom: 20px;">
+            <label for="sports">Gomba (+500 Ft)</label>
+            <br>
+            <input type="checkbox" name="feltetek" id="kukorica" value="kukorica" style="margin-bottom: 20px;">
+            <label for="sports">Kukorica (+250 Ft)</label>
+
+            </p>
+
+            <p>
+            <h3 style="margin-bottom: 0px;">Méret (átmérő)</h3> <br>
+            <input type="radio" name="meret" id="25" value="25" style="margin-bottom: 20px;">
+            <label for="gender">25 cm</label>
+            <br>
+            <input type="radio" name="meret" id="32" value="32" style="margin-bottom: 20px;">
+            <label for="gender">32 cm</label>
+            </p>
+        </fieldset>
+        <button type="submit" style="margin-bottom: 20px; margin-top: 20px;">Regisztráció</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+</head>
+<body>
+    <h1>Regisztráció</h1>
+    <!-- GET method ugyanarra az oldalra kuldi az infot -->
+    <!-- <form action="#" method="get"> -->
+
+    <!-- elkuldi at adatokat post methoddal -->
+    <form action="https://httpbin.org/post" method="post">
+        <p>*
+            <label for="nev">Teljes név:</label>
+            <input type="text" name="nev" id="nev"
+            placeholder="pl.: Mikorka Kálmán" required>
+        </p>
+        <p>*
+            <label for="email">E-mail cím:</label>
+            <input type="email" name="email" id="email"
+            placeholder="pl.: dancacica@szekszard.hu" required>
+        </p>
+        <p>*
+            <label for="phone-number">Telefonszám</label>
+            <input type="tel" name="phone-number" id="phone-number"
+            minlength="12" maxlength="15"
+            placeholder="+36 70 561 6764" required>
+        </p>
+        <p>*
+            <label for="age">Életkor:</label>
+            <input type="number" name="age" id="age"
+            min="0" max="120"
+            placeholder="pl. 25" required>
+        </p>
+
+        <p>*Nem <br>
+            <!-- Radio csak egyet -->
+            <label for="gender">Férfi:</label>
+            <input type="radio" name="gender" id="male" value="male">
+
+            <label for="gender">Nő:</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </p>    
+
+        <p>Sportok <br>
+            <!-- checkbox-többet -->
+            <label for="sports">Foci</label>
+            <input type="checkbox" name="sports" id="football" value="football">
+
+            <label for="sports">Kosárlabda</label>
+            <input type="checkbox" name="sports" id="basketball" value="backetball">
+            
+        </p>
+
+        <p><small>A *-gal jelölt mezők kötelezőek.</small></p>
+        <button type="submit">Regisztráció</button>
+    </form>
+</body>
+</html>
